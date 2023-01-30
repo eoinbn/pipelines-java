@@ -28,3 +28,10 @@ steps:
     publishJUnitResults: true
     testResultsFiles: "**/TEST-*.xml"
     goals: "package"
+
+schedules:
+- cron: "22 35 * * *"
+  displayName: evening build
+  branches:
+    include:
+    - main
