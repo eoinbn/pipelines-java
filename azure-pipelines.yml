@@ -30,7 +30,7 @@ steps:
     goals: "package"
 
 schedules:
-- cron: "22 35 * * *"
+- cron: "08 00 * * *"
   displayName: evening build
   branches:
     include:
